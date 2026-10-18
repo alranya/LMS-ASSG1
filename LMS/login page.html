@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page </title>
+    <body>
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            
+            
+            <td width="70%" valign="top" bgcolor="#f4f4f4" height="100%">
+                <h1><font color="red">🏛️Welcome to the Havad Engineering Library</font></h1>
+                <p><font color="brown"><b>Access thousands of engineering journals, textbooks, and research papers tailored for B.Tech and M.Tech students.</b></font></p>
+                <br>
+               
+                <img src="./library.jpg" alt="Library Bookshelf image" width="100%">
+            </td>
+
+           
+            <td width="50%" valign="" bgcolor="BDDAF2">
+            <table>
+                <h2>Member Login</h2>
+                <p><B><FONT COLOR="624263">Please enter your credentials to access your account.</FONT></B></p>
+                
+                <form action="./dashboard.html" method="GET">
+                    
+                    <p>
+                        <label for="userid">College ID / Roll Number:</label><br>
+                        <input type="text" id="userid" name="userid" placeholder="e.g., HAV-EC-2026-042" required size="30">
+                    </p>
+
+                   
+                    <p>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required size="30">
+                    </p>
+
+                    
+                    <p>
+                        <label for="role">Select Role:</label><br>
+                        <select id="role" name="role">
+                            <option value="student">Student</option>
+                            <option value="faculty">Faculty Member</option>
+                            <option value="admin">Librarian / Admin</option>
+                        </select>
+                    </p>
+
+                    
+                    <p>
+                        
+                        <button type="submit">Login to Account</button>
+                    </p>
+                </form>
+
+                </table>
+
+                <hr>
+                
+                
+                <p>
+                    Don't have an account? <a href="./signup page.html">Register here</a><br>
+                    Just browsing? <a href="./view book.html">View Catalog as Guest</a>
+                </p>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>

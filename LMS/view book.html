@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View book</title>
+</head>
+<body>
+
+    <table width="100%" border="0" cellpadding="10" bgcolor="#f4f4f4">
+        <tr>
+            <td>
+                <h1><font color="red">🏛️Havad Engineering Library Catalog</font></h1>
+             <p><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Browse available textbooks, journals, and technical manuals.</b></p>
+            </td>
+            <td align="right">
+                <a href="./login page.html">Login</a> | 
+                <a href="./signup page.html">Register</a> | 
+                <a href="./dashboard.html">Dashboard</a>    | 
+                <a href="./add book.html">Add Book (Admin)</a> 
+             
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table width="100%" border="0" cellpadding="15">
+        <tr>
+            <td>
+            
+                <h3>Search Catalog</h3>
+                <form action="./view book.html" method="GET">
+                    <p>
+                        <label for="search">Keyword (Title / Author):</label><br>
+                        <input type="text" id="search" name="search" placeholder="e.g., Sedra Smith" size="40">
+                    </p>
+                    
+                    <p>
+                        <label for="branch-filter">Filter by Branch:</label><br>
+                        <select id="branch-filter" name="branch">
+                            <option value="all">All Engineering Branches</option>
+                            <option value="ece">Electronics & Communication (ECE)</option>
+                            <option value="cse">Computer Science (CSE)</option>
+                            <option value="eee">Electrical & Electronics (EEE)</option>
+                            <option value="mech">Mechanical Engineering</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <button type="submit">Search Books</button>
+                    </p>
+                </form>
+
+                <hr>
+
+                <h3>Available Inventory</h3>
+                <table width="100%" border="1" cellpadding="8" cellspacing="3">
+                    <tr bgcolor="#e2e2e2">
+                        <th>Accession ID</th>
+                        <th>Book Title & Author</th>
+                        <th>Branch</th>
+                        <th>Available Copies</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>ECE-101</td>
+                        <td>
+                            <b>Microelectronic Circuits</b><br>
+                            <em>Adel S. Sedra, Kenneth C. Smith</em>
+                        </td>
+                        <td>ECE</td>
+                        <td>4 / 5</td>
+                        <td><button type="button">Reserve / Issue</button></td>
+                    </tr>
+                    <tr>
+                        <td>CSE-304</td>
+                        <td>
+                            <b>Introduction to Algorithms</b><br>
+                            <em>Thomas H. Cormen, Charles E. Leiserson</em>
+                        </td>
+                        <td>CSE</td>
+                        <td>2 / 3</td>
+                        <td><button type="button">Reserve / Issue</button></td>
+                    </tr>
+                    <tr>
+                        <td>EEE-205</td>
+                        <td>
+                            <b>Electric Machinery Fundamentals</b><br>
+                            <em>Stephen J. Chapman</em>
+                        </td>
+                        <td>EEE</td>
+                        <td>5 / 5</td>
+                        <td><button type="button">Reserve / Issue</button></td>
+                    </tr>
+                    <tr>
+                        <td>MECH-410</td>
+                        <td>
+                            <b>Engineering Thermodynamics</b><br>
+                            <em>P.K. Nag</em>
+                        </td>
+                        <td>Mechanical</td>
+                        <td>1 / 2</td>
+                        <td><button type="button">Reserve / Issue</button></td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <p align="center">
+        <small>&copy; 2026 Havad Engineering College Library Portal. All rights reserved.</small>
+    </p>
+
+</body>
+</html>

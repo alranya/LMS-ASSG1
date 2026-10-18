@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Dashboard</title>
+</head>
+<body>
+
+    <table width="100%" border="0" cellpadding="10" bgcolor="#f4f4f4">
+        <tr>
+            <td>
+                <h1><font color="purple"><b>🏛️Student Member Dashboard</font></h1>
+                <p><b>&nbsp;&nbsp;&nbsp;Welcome back, Smitha! Manage your borrowed books and account status.</b></p>
+            </td>
+            <td align="right">
+                <a href="./view book.html">Library Catalog</a> | 
+                <a href="./login page.html">Logout</a>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table width="100%" border="0" cellpadding="15">
+        <tr>
+            
+            <td width="40%" valign="top" bgcolor="F2E6E6">
+                <h3>My Profile</h3>
+                <p>
+                    <b>Name:</b> Smitha M.V.<br>
+                    <B>Roll Number / ID:</B> HAV-EC-2026-042<br>
+                    <b>Department:</B> Electronics & Communication (ECE)<br>
+                    <b>Academic Year:</b> 3rd Year (Sem 5)<br>
+                    <b>Account Status:</b> <span style="color: green;">Active</span>
+                </p>
+
+                <hr>
+
+                <h3>Request a New Book</h3>
+                <p>Can't find a textbook you need? Submit a purchase request to the librarian.</p>
+                
+                <form action="./dashboard.html" method="GET">
+                    <p>
+                        <label for="req-title">Book Title:</label><br>
+                        <input type="text" id="title" name="title" placeholder="e.g., CMOS VLSI Design" size="30" required>
+                    </p>
+                    <p>
+                        <label for="author">Author:</label><br>
+                        <input type="text" id="req-author" name="author" placeholder="e.g., Weste & Harris" size="30" required>
+                    </p>
+                    <p>
+                        <button type="submit">Submit Request</button>
+                    </p>
+                </form>
+            </td>
+
+            <td width="60%" valign="top">
+                <h3>Currently Issued Books</h3>
+                
+                <table width="100%" border="1" cellpadding="8" cellspacing="0">
+                    <tr bgcolor="#e2e2e2">
+                        <th>Accession ID</th>
+                        <th>Book Title</th>
+                        <th>Due Date</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>ECE-101</td>
+                        <td><b>Microelectronic Circuits</b><br><em>Sedra & Smith</em></td>
+                        <td>25-Oct-2026</td>
+                        <td><button type="button">Renew Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>CSE-304</td>
+                        <td><b>Introduction to Algorithms</b><br><em>Cormen et al.</em></td>
+                        <td>28-Oct-2026</td>
+                        <td><button type="button">Renew Book</button></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>Library Fines & Dues</h3>
+                <p>Current Overdue Fines: <b>₹0.00</b> (No active penalties)</p>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <p align="center">
+        <small>&copy; 2026 Havad Engineering College Library Portal. All rights reserved.</small>
+    </p>
+
+</body>
+</html>

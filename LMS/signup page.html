@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+</head>
+<body>
+
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            
+            
+            <td width="50%" valign="top" bgcolor="#f4f4f4">
+                <h1><font color="red">🏛️Join the Havad Engineering Library Network</font></h1>
+                <p><b>Register for your digital library membership to borrow textbooks, reserve study labs, and track your academic checkouts seamlessly.</b></p>
+                <br>
+              
+                <img src="./images.jpeg" width="100%">
+            </td>
+
+           
+            <td width="20%" valign="top" bgcolor="BDDAF2">
+                <h2>New Member Registration</h2>
+                <p>Fill in your academic details to create your account.</p>
+                
+                <form action="./login page.html" method="GET">
+                   
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required size="30">
+                    </p>
+
+                    <p>
+                        <label for="email">Institutional Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="name@college.edu" required size="30">
+                    </p>
+
+                    <p>
+                        <label for="password">Create Password:</label><br>
+                        <input type="password" id="password" name="password" required size="30">
+                    </p>
+
+                    <p>
+                        <label for="department">Engineering Department:</label><br>
+                        <select id="department" name="department">
+                            <option value="ece">Electronics and Communication (ECE)</option>
+                            <option value="cse">Computer Science and Engineering (CSE)</option>
+                            <option value="eee">Electrical and Electronics (EEE)</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="year">Current Year / Status:</label><br>
+                        <select id="year" name="year">
+                            <option value="1">1st Year (Sem 1 & 2)</option>
+                            <option value="2">2nd Year (Sem 3 & 4)</option>
+                            <option value="3">3rd Year (Sem 5 & 6)</option>
+                            <option value="4">4th Year (Sem 7 & 8)</option>
+                            <option value="faculty">Faculty Member</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <button type="submit">Complete Registration</button>
+                    </p>
+                </form>
+
+                <hr>
+            
+                <p>
+                    Already have an account? <a href="./login page.html">Login here</a><br>
+                    Just browsing? <a href="./view book.html">View Catalog as Guest</a>
+                </p>
+            </td>
+
+        </tr>
+    </table>
+
+
+</body>
+</html>

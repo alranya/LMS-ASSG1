@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book (Admin)</title>
+</head>
+<body>
+
+    <table width="100%" border="0" cellpadding="10" bgcolor="#f4f4f4">
+        <tr>
+            <td>
+                <h1><font color="purple">🏛️Admin Dashboard: Add New Book</font></h1>
+                <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register new engineering textbooks and manuals into the inventory.</b></p>
+            </td>
+            <td align="right">
+                <a href="./view book.html">View Catalog</a> | 
+                <a href="./dashboard.html">Dashboard</a> |
+                <a href="./login page.html">Logout</a>
+                
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table width="100%" border="0" cellpadding="15" >
+        <tr>
+            <td valign="top" width="60%" bgcolor="F2E6E6">
+            
+                <h3>Book Inventory Entry Form</h3>
+                <form action="./view-book.html" method="GET">
+                    
+                    
+                    <p>
+                        <label for="title">Book Title:</label><br>
+                        <input type="text" id="title" name="title" placeholder="e.g., Digital Logic and Computer Design" size="40" required>
+                    </p>
+
+                    <p>
+                        <label for="author">Author(s):</label><br>
+                        <input type="text" id="author" name="author" placeholder="e.g., M. Morris Mano" size="40" required>
+                    </p>
+                    <p>
+                        <label for="isbn">ISBN / Accession Number:</label><br>
+                        <input type="text" id="isbn" name="isbn" placeholder="e.g., 978-0131429055" size="40" required>
+                    </p>
+
+                    <p>
+                        <label for="branch">Target Engineering Branch:</label><br>
+                     <select id="branch" name="branch">
+                            <option value="general">General Engineering</option>
+                            <option value="ece">Electronics & Communication (ECE)</option>
+                            <option value="cse">Computer Science (CSE)</option>
+                            <option value="eee">Electrical & Electronics (EEE)</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="copies">Number of Copies:</label><br>
+                        <input type="number" id="copies" name="copies" min="1" value="1" required>
+                    </p>
+                    <p>
+                        <button type="submit">Add Book to Database</button>
+                    </p>
+                </form>
+
+            </td>
+
+            <td valign="top" width="50%" bgcolor="#f9f9f9">
+                <h3>Admin Guidelines</h3>
+                <p>When adding new books to the engineering library portal, please ensure:</p>
+                <ul>
+                    <li>The <b>Accession ID / ISBN</b> matches the barcode sticker on the physical textbook.</li>
+                    <li>Select the correct <b>Engineering Branch</b> so students can easily filter and locate resources.</li>
+                    <li>Keep the <b>Number of Copies</b> accurate based on physical stock received from publishers.</li>
+                </ul>
+                <hr>
+                <p>Done adding books? <a href="./view book.html">Click here to view the updated catalog</a>.</p>
+            </td>
+        </tr>
+    </table>
+<br>
+    <hr>
+
+    <p align="center">
+        <small>&copy; 2026 Havad Engineering College Library Portal. All rights reserved.</small>
+    </p>
+
+</body>
+</html>
